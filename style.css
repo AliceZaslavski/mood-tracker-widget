@@ -1,7 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: #f4f4f4;
+    background: #f5f0eb; /* Beež taust */
+    color: #000;
+}
+
+.widget-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 350px; /* Kitsam vidin */
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .grid {
@@ -9,12 +20,28 @@ body {
     grid-template-columns: repeat(7, 40px);
     gap: 5px;
     justify-content: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .pixel {
     width: 40px;
     height: 40px;
-    background: #ddd;
     border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+/* Gradient efekt, kui lisatakse mitu tunnet */
+.pixel::before {
+    content: attr(data-date);
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
