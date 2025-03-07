@@ -7,22 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Meeleolu Tracker</h1>
-    <select id="moodSelector">
-        <option value="">Vali tuju</option>
-        <option value="#e6fff2">Tänulik</option>
-        <option value="#e6ffff">Üksildane</option>
-        <option value="#ffebcc">Segaduses</option>
-        <option value="#ffffb3">Innustunud</option>
-        <option value="#f0b3ff">Ärev</option>
-        <option value="#ccffcc">Rahulik</option>
-        <option value="#ff3333">Vihane</option>
-        <option value="#99e6ff">Kurb</option>
-        <option value="#ffb3ff">Rõõmus</option>
-    </select>
-    <button id="saveMood">Salvesta</button>
+    <div class="widget-container">
+        <h2>Meeleolu Tracker</h2>
+        <label for="date">Vali kuupäev:</label>
+        <input type="date" id="date">
+        
+        <label for="moodSelector">Vali tuju:</label>
+        <select id="moodSelector">
+            <option value="">Vali tuju</option>
+            <option value="#e6fff2">Tänulik</option>
+            <option value="#e6ffff">Üksildane</option>
+            <option value="#ffebcc">Segaduses</option>
+            <option value="#ffffb3">Innustunud</option>
+            <option value="#f0b3ff">Ärev</option>
+            <option value="#ccffcc">Rahulik</option>
+            <option value="#ff3333">Vihane</option>
+            <option value="#99e6ff">Kurb</option>
+            <option value="#ffb3ff">Rõõmus</option>
+        </select>
 
-    <div class="grid"></div>
+        <button id="saveMood">Salvesta</button>
+        
+        <div class="grid"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
